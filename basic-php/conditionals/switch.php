@@ -3,6 +3,15 @@
 
     "Switch is used to check multiple conditions.";
 
+    /*
+    Syntax:
+    switch (expression) {
+        case constant expression:
+            // code to be executed if the condition is true
+        break;
+    }
+    */
+
     $favorite_day = "Saturday";
 
     switch ($favorite_day) {

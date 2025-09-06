@@ -3,6 +3,26 @@
 
     "If else is used to check if a condition is true or false.";
 
+    /*
+    Syntax:
+    if (condition) {
+        // code to be executed if the condition is true
+    } else {
+        // code to be executed if the condition is false
+    }
+    */
+
+    /*
+    Syntax:
+    if (condition) {
+        // code to be executed if the condition is true
+    } else if (condition) {
+        // code to be executed if the condition is true
+    } else {
+        // code to be executed if the condition is false
+    }
+    */
+    
     $age = 17;
     $people = 2;
 
