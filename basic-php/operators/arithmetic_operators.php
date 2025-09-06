@@ -9,6 +9,8 @@
 
     echo "Addition: " . (1 + 1) . "<br>";
 
+    echo "Addition of integer and float: " . (1 + 1.5) . "<br>";
+
     echo "Subtraction: " . (2 - 1) . "<br>";
 
     echo "Multiplication: " . (2 * 2) . "<br>";
