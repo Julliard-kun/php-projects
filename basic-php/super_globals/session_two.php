@@ -106,9 +106,16 @@ if (isset($_POST['logout'])) {
     <div class="dashboard-container">
         <div class="header">
             <h1>Welcome, <?php echo htmlspecialchars($_SESSION['user_name']); ?></h1>
-            <form method="POST" style="display: inline;">
-                <button type="submit" name="logout" class="logout-btn">Logout</button>
-            </form>
+            <div style="display: flex; gap: 10px;">
+                <a href="session_three.php" style="text-decoration: none;">
+                    <button type="button" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+                        Update Profile
+                    </button>
+                </a>
+                <form method="POST" style="display: inline;">
+                    <button type="submit" name="logout" class="logout-btn">Logout</button>
+                </form>
+            </div>
         </div>
 
         <div class="user-info">
