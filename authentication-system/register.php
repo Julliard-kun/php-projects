@@ -3,6 +3,10 @@
 <?php require "config.php"; ?>
 
 <?php 
+    if(isset($_SESSION['username'])) {
+        header("Location: index.php");
+    }
+    
     if(isset($_POST['submit'])) {
         $email = $_POST['email'];
         $username = $_POST['username'];

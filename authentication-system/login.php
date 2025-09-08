@@ -3,6 +3,10 @@
 <?php require "config.php"; ?>
 
 <?php 
+    if(isset($_SESSION['username'])) {
+        header("Location: index.php");
+    }
+
     if(isset($_POST['submit'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -19,7 +23,8 @@
 
         if($stmt->rowCount() > 0) {
             if(password_verify($password, $user['password'])) {
-                $_SESSION['user'] = $user;
+                $_SESSION['username'] = $user['username'];
+                $_SESSION['email'] = $user['email'];
 
                 header("Location: index.php");
             } else {
