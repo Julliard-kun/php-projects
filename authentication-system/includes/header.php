@@ -22,7 +22,11 @@ session_start();
 
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Authentication System</a>
+            <?php if(!isset($_SESSION['username'])): ?>
+                <a class="navbar-brand" href="#">Authentication System</a>
+            <?php else: ?>
+                <a class="navbar-brand" href="#"></a>
+            <?php endif; ?>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
