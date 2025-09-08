@@ -42,7 +42,7 @@
                             Username
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li><a class="dropdown-item" href="login.php">Logout</a></li>
 
                         </ul>
                     </li>
